@@ -4,34 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
         <title>WebLeertaak</title>
     </head>
     <body>
         <nav>
-            <a href="homepagina.html">Home</a>
-            <a href="profielpagina.html">Profiel</a>
-            <a href="voortgangpagina.html">Voortgang</a>
-            <a href="profielpagina.html">Jens</a>
-            <img src="img/blankProfilePic.png" width="50px" height="50px" alt="Profile pic">
+            <div id="links">
+                <a href="homepagina.html" class="active">Home</a>
+                <a href="profielpagina.html">Profiel</a>
+                <a href="voortgangpagina.html">Voortgang</a>
+            </div>
+            <div class="profilePic">
+                <div>Jens</div>
+                <img src="img/blankProfilePic.png" width="50px" height="50px" alt="Profile pic">
+            </div>
         </nav>
-        <h1>Voortgangsmonitor</h1>
-        <p>
-            Deze voortgangsmonitor dient je inzicht te geven in de studievoortgang. Op de <a href="profielpagina.html">Profiel</a> pagina kun je informatie omtrent
-            de persoon instellen. Op de <a href="voortgangpagina.html">voortgang</a> pagina kun je vervolgens de vakken invullen, het aantal ECTS ervan en de datum waarop het vak is behaald.
-            Door op de knop te bereken studietempo te klikken zal vervolgens een diaglovenster verschijnen dat op basis van de ingevoerde informatie het 
-            studietempo berekend.
-        </p>
-        <img src="img/hu-logo.jpg" alt="HU Logo" width="200px" height="200px">
-        <p>
-            Deze versie van de voortgangsmonitor is echter nog erg beperkt in zijn functionaliteit, omdat het niet zo zeer om de werking ervan gaat,
-            maar veel meer om goede omzetting van een wireframe naar een HTML, CSS en JS.
-            <img src="img/studenten.jpg" alt="Studerende studenten">
-        </p>
+        <div class="container1">
+            <h1>Voortgangsmonitor</h1>
+            <img id="imgHuLogo" src="img/hu-logo.jpg" alt="HU Logo" width="150px" height="150px">
+            <p>
+                Deze voortgangsmonitor dient je inzicht te geven in de studievoortgang. Op de <a href="profielpagina.html">Profiel</a> pagina kun je informatie omtrent
+                de persoon instellen.
+                <br> Op de <a href="voortgangpagina.html">voortgang</a> pagina kun je vervolgens de vakken invullen, het aantal ECTS ervan en de datum waarop het vak is behaald.<br>
+                Door op de knop te bereken studietempo te klikken zal vervolgens een diaglovenster verschijnen dat op basis van de ingevoerde informatie het 
+                studietempo berekend.
+            </p>
+            <p>
+                Deze versie van de voortgangsmonitor is echter nog erg beperkt in zijn functionaliteit, omdat het niet zo zeer om de werking ervan gaat,
+                maar veel meer om goede omzetting van een wireframe naar een HTML, CSS en JS.
+            </p>
+            <img id="imgStudenten" src="img/studenten.jpg" alt="Studerende studenten">
+        </div>
         <hr>
         <footer>
             Deze opdracht is gemaakt in het kader van het vak Analyse & User Interfaces
-            <p>Auteur: Berry Hijwegen</p>
-            <p>Datum: 13-2-2019</p>
+            <p>
+                <span id="authorSpan">Auteur: Berry Hijwegen</span>
+                <span id="dateSpan">Datum: 13-2-2019</span>
+            </p>
         </footer>
     </body>
 </html>

@@ -4,61 +4,102 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
         <title>WebLeertaak</title>
     </head>
-<body>
-    <nav>
-        <a href="homepagina.html">Home</a>
-        <a href="profielpagina.html">Profiel</a>
-        <a href="voortgangpagina.html">Voortgang</a>
-        <a href="profielpagina.html">Jens</a>
-        <img src="img/blankProfilePic.png" width="50px" height="50px" alt="Profile pic">
-    </nav>
-
-    <h1>Profiel</h1>
-    
-    <form>
-        Voornaam:
-        <input name="firstname" type="text"><br>
-        Achternaam:
-        <input name="surname" type="text"><br>
-        Adres:
-        <textarea name="adress" rows="4" cols="20"></textarea><br>
-        E-mail:
-        <input type="text" name="email"><br>
-        Telefoonnr:
-        <input type="text" name="phonenum"><br>
-        Geslacht:
-        <input type="radio" name="gender" value="male" checked>Man
-        <input type="radio" name="gender" value="female">Vrouw<br>
-        Geboortedatum:
-        <input type="date" name="birthdate"><br>
-        Studentennr:
-        <input type="text" name="studentnum"><br>
-        Klas:
-        <select name="class">
-            <option value="v1a">V1A</option>
-            <option value="v1b">V1B</option>
-            <option value="v1c">V1C</option>
-            <option value="v1d">V1D</option>
-            <option value="v1e">V1E</option>
-        </select><br>
-        Gekozen Studierichting:
-        <input type="radio" name="fieldofstudy" value="sne" checked>SNE<br>
-        <input type="radio" name="fieldofstudy" value="bim">BIM<br>
-        <input type="radio" name="fieldofstudy" value="sie">SIE<br>
-        <input type="radio" name="fieldofstudy" value="ti">TI<br>
-        <input type="radio" name="fieldofstudy" value="aai">AAI<br>
-        Foto:
-        <img src="img/blankProfilePic.png" alt="Profile Picture" height="100px" width="100px"><br>
-        <button>Change</button>
-    </form>
-
-    <hr>
-    <footer>
-        Deze opdracht is gemaakt in het kader van het vak Analyse & User Interfaces
-        <p>Auteur: Berry Hijwegen</p>
-        <p>Datum: 13-2-2019</p>
-    </footer>
-</body>
+    <body>
+        <nav>
+            <div id="links">
+                <a href="homepagina.html">Home</a>
+                <a href="profielpagina.html" class="active">Profiel</a>
+                <a href="voortgangpagina.html">Voortgang</a>
+            </div>
+            <div class="profilePic">
+                <div>Jens</div>
+                <img src="img/blankProfilePic.png" width="50px" height="50px" alt="Profile pic">
+            </div>
+        </nav>
+        <div class="container2">
+            <h1>Profiel</h1>
+            <div class="formWrapper">
+                <form>
+                    <div class="right">
+                        <div class="inputDiv">
+                            <label for="studentnum">Studentennr:</label>
+                            <input type="text" name="studentnum"><br>
+                        </div>
+                        <div class="inputDiv">
+                            <label for="class">Klas:</label>
+                            <select name="class">
+                                <option value="v1a">V1A</option>
+                                <option value="v1b">V1B</option>
+                                <option value="v1c">V1C</option>
+                                <option value="v1d">V1D</option>
+                                <option value="v1e">V1E</option>
+                            </select><br>
+                        </div>
+                        <div class="inputDiv">
+                            <label id="textFieldofstudy" for="fieldofstudy">Gekozen Studierichting:</label>
+                            <div class="radioButtonDiv">
+                                <input type="radio" name="fieldofstudy" value="sne" checked><span class="fieldSpan">SNE</span><br>
+                                <input type="radio" name="fieldofstudy" value="bim"><span class="fieldSpan">BIM</span><br>
+                                <input type="radio" name="fieldofstudy" value="sie"><span class="fieldSpan">SIE</span><br>
+                                <input type="radio" name="fieldofstudy" value="ti"><span class="fieldSpan">TI</span><br>
+                                <input type="radio" name="fieldofstudy" value="aai"><span class="fieldSpan">AAI</span><br>
+                            </div>
+                        </div>
+                        <div class="inputDiv pictureDiv">
+                            Foto:
+                            <div class="picWrapper">
+                                <img src="img/blankProfilePic.png" alt="Profile Picture" style="vertical-align: top" height="100px" width="100px"><br>
+                                <button>Change</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left">
+                        <div class="inputDiv">
+                            <label for="firstname">Voornaam:</label>
+                            <input name="firstname" type="text"><br>
+                        </div>
+                        <div class="inputDiv">
+                            <label for="surname">Achternaam:</label>
+                            <input name="surname" type="text"><br>
+                        </div>
+                        <div class="inputDiv">
+                            <label for="adress">Adres:</label>
+                            <textarea name="adress" rows="4" cols="20"></textarea><br>
+                        </div>
+                        <div class="inputDiv">
+                            <label for="email">E-mail:</label>
+                            <input type="text" name="email"><br>
+                        </div>
+                        <div class="inputDiv">
+                            <label for="phonenum">Telefoonnr:</label>
+                            <input type="text" name="phonenum"><br>
+                        </div>
+                        <div class="inputDiv">
+                            <label for="gender">Geslacht:</label>
+                            <div class="genderRadioDiv">
+                                <input type="radio" name="gender" value="male" checked><span class="genderSpan">Man</span>
+                                <input type="radio" name="gender" value="female"><span class="genderSpan">Vrouw</span><br>
+                            </div>
+                        </div>
+                        <div class="inputDiv">
+                            <label for="birthdate">Geboortedatum:</label>
+                            <input type="date" name="birthdate"><br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            Deze opdracht is gemaakt in het kader van het vak Analyse & User Interfaces
+            <p>
+                <span id="authorSpan">Auteur: Berry Hijwegen</span>
+                <span id="dateSpan">Datum: 13-2-2019</span>
+            </p>
+        </footer>
+    </body>
 </html>

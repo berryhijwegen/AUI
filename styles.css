@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* nav bar */
+nav {
+    background: #FFFF66;
+    border-bottom: 5px solid #008CFF;
+    height: 65px;
+    position: relative;
+}
+
+nav a {
+    padding: 2px 20px;
+    background: white;
+    text-decoration: none;
+    border: 1px solid black;
+    float: left;
+}
+
+nav #links {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+}
+
+.active {
+    color: white;
+    background: #008CFF;
+    border-left: none;
+    border-bottom: 1px solid #008CFF;
+}
+
+.profilePic{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    float: right;
+    margin-right: 20px
+}
+
+.profilePic div {
+    float:left;
+    margin-right: 10px
+}
+
+.profilePic img{
+    border-radius: 25px;
+}
+
+
+/* footer */
+hr {
+    border-top: 2px solid black;
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 80%
+}
+
+#authorSpan {
+    float: left;
+    margin-left: 20px;
+}
+
+#dateSpan {
+    float: right;
+    margin-right: 20px;
+}
+
+
+/* Containers */
+.container1, .container2, .container3 {
+    margin: 3.5% 3.5% 5% 3.5% ;
+    overflow: auto;
+}
+
+
+/* Home */
+#imgHuLogo {
+    float: right;
+}
+
+#imgStudenten {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Profile */
+.container2 form {
+    overflow: auto;
+    width: 66%;
+    margin: 0 auto;
+}
+
+.formWrapper {
+    margin: 0 auto;
+    overflow: auto;
+}
+.left, .right {
+    overflow: auto;
+    width: 45%;
+}
+
+.right {
+    float: right;
+}
+
+input, select, textarea, option {
+    float: right;
+}
+select {
+    width: 11.7vw
+}
+.inputDiv{
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.radioButtonDiv{
+    display:inline;
+    float: left;
+    margin-left: 10px
+}
+.radioButtonDiv input {
+    float: left;
+}
+
+.picWrapper {
+    display:inline;
+    float: right;
+}
+
+#textFieldofstudy {
+    float: left;
+}
+
+.pictureDiv {
+    width: 67%;
+}
+.pictureDiv img {
+    border: 1px solid black
+}
+
+.genderRadioDiv {
+    float: right;
+    margin-left: 10px
+}
+.genderRadioDiv input, .genderRadioDiv span {
+    float: left;
+}
+
+.pictureDiv button {
+    color: white;
+    background: #008CFF;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    height: 30px;
+}
+
+.formWrapper input[type="text"], .formWrapper textarea, .formWrapper input[type="date"]{
+    width: 11.5vw
+}
+
+
+/* Voortgang */
+.cursusTable {
+    border: 3px solid black;
+    border-collapse: collapse;
+    float: left;
+}
+.container3 .left{
+    height: 300px;
+}
+.left form {
+    margin: 0
+}
+.left button {
+    font-weight: bold;
+    margin-top: 20px;
+    height: 30px;
+    border: 0;
+    border-right: 2px solid #c6c6c6;
+    border-bottom: 2px solid #c6c6c6;
+    outline: none;
+}
+.left button:active {
+    border: none;
+}
+.cursusTable th, .cursusTable td {
+    border: 1px solid black;
+    background: #CCFF99;
+}
+table input {
+    border: 0;
+    padding: 2px;
+    background: #CCFF99;
+}
+table input[type="number"]{
+    text-align: center;
+}
+
+#maps{
+    border: 2px solid black;
+    margin: 20px 0;
+}
+
+.infoTable {
+    border: none;
+}
+.infoTable td{
+    width:100px
+}
+
+.container3 form{
+    overflow: auto;
+}

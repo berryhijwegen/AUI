@@ -1,70 +1,93 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <a href="homepagina.html">Home</a>
-        <a href="profielpagina.html">Profiel</a>
-        <a href="voortgangpagina.html">Voortgang</a>
-        <a href="profielpagina.html">Jens</a>
-        <img src="img/blankProfilePic.png" width="50px" height="50px" alt="Profile pic">
-    </nav>
-    <h1>Voortgang</h1>
-    <form>
-        <table>
-            <tr>
-                <th>Vakcode</th>
-                <th>ECTS</th>
-                <th>Datum behaald</th>
-            </tr>
-            <tr>
-                <td><input type="text" name="vakcode1" placeholder="vakcode"></td>
-                <td><input type="number" name="ects1" min="1" max="60" placeholder="ECTS"></td>
-                <td><input type="date" name="date1"></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="vakcode2" placeholder="vakcode"></td>
-                <td><input type="number" name="ects2" min="1" max="60" placeholder="ECTS"></td>
-                <td><input type="date" name="date2"></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="vakcode3" placeholder="vakcode"></td>
-                <td><input type="number" name="ects3" min="1" max="60" placeholder="ECTS"></td>
-                <td><input type="date" name="date3"></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="vakcode4" placeholder="vakcode"></td>
-                <td><input type="number" name="ects4" min="1" max="60" placeholder="ECTS"></td>
-                <td><input type="date" name="date4"></td>
-            </tr>
-            <tr>
-                <td><input type="text" name="vakcode5" placeholder="vakcode"></td>
-                <td><input type="number" name="ects5" min="1" max="60" placeholder="ECTS"></td>
-                <td><input type="date" name="date5"></td>
-            </tr>
-        </table>
-    </form>
-    <button>Bereken studietempo</button>
-    <div>
-        Student: Jens<br>
-        Telefoon: 0123456789<br>
-        email: jens@student.hu.nl<br>
-    </div>
-    <div>
-        <img src="img/plattegrond.png" alt="Map" height="120px" width="300px">
-    </div>
-    <div>
-        <img src="img/burndownchart.png" alt="Burn down chart" height="120px" width="300px">
-    </div>
-    <hr>
-    <footer>
-        Deze opdracht is gemaakt in het kader van het vak Analyse & User Interfaces
-        <p>Auteur: Berry Hijwegen</p>
-        <p>Datum: 13-2-2019</p>
-    </footer>    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=2.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>WebLeertaak</title>
+    </head>
+    <body>
+        <nav>
+            <div id="links">
+                <a href="homepagina.html">Home</a>
+                <a href="profielpagina.html">Profiel</a>
+                <a href="voortgangpagina.html" class="active">Voortgang</a>
+            </div>
+            <div class="profilePic">
+                <div>Jens</div>
+                <img src="img/blankProfilePic.png" class="pic" width="50px" height="50px" alt="Profile pic">
+            </div>
+        </nav>
+        <div class="container3">
+            <h1>Voortgang</h1>
+            <div class="right">
+                <table class="infoTable">
+                    <tr>
+                        <td>Student:</td>
+                        <td>Jens</td>
+                    </tr>
+                    <tr>
+                        <td>Telefoon:</td>
+                        <td>0123456789</td>
+                    </tr>
+                    <tr>
+                        <td>email:</td>
+                        <td>jens@student.hu.nl</td>
+                    </tr>
+                </table>
+                <div>
+                    <img src="img/plattegrond.png" id="maps" alt="Map" height="120px" width="300px">
+                </div>
+                <div>
+                    <img src="img/burndownchart.png" alt="Burn down chart" height="120px" width="300px">
+                </div>
+            </div>
+            <div class="left">
+                <form>
+                    <table class="cursusTable">
+                        <tr>
+                            <th>Vakcode</th>
+                            <th>ECTS</th>
+                            <th>Datum behaald</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="vakcode1" placeholder="vakcode"></td>
+                            <td><input type="number" name="ects1" min="1" max="60" placeholder="ECTS"></td>
+                            <td><input type="date" name="date1"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="vakcode2" placeholder="vakcode"></td>
+                            <td><input type="number" name="ects2" min="1" max="60" placeholder="ECTS"></td>
+                            <td><input type="date" name="date2"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="vakcode3" placeholder="vakcode"></td>
+                            <td><input type="number" name="ects3" min="1" max="60" placeholder="ECTS"></td>
+                            <td><input type="date" name="date3"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="vakcode4" placeholder="vakcode"></td>
+                            <td><input type="number" name="ects4" min="1" max="60" placeholder="ECTS"></td>
+                            <td><input type="date" name="date4"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="vakcode5" placeholder="vakcode"></td>
+                            <td><input type="number" name="ects5" min="1" max="60" placeholder="ECTS"></td>
+                            <td><input type="date" name="date5"></td>
+                        </tr>
+                    </table>
+                </form>
+                <button>Bereken studietempo</button>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            Deze opdracht is gemaakt in het kader van het vak Analyse & User Interfaces
+            <p>
+                <span id="authorSpan">Auteur: Berry Hijwegen</span>
+                <span id="dateSpan">Datum: 13-2-2019</span>
+            </p>
+        </footer>
+    </body>
 </html>
