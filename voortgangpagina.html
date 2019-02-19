@@ -44,41 +44,45 @@
                 </div>
             </div>
             <div class="left">
-                <form>
+                <form id="expectedP">
                     <table class="cursusTable">
-                        <tr>
-                            <th>Vakcode</th>
-                            <th>ECTS</th>
-                            <th>Datum behaald</th>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="vakcode1" placeholder="vakcode"></td>
-                            <td><input type="number" name="ects1" min="1" max="60" placeholder="ECTS"></td>
-                            <td><input type="date" name="date1"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="vakcode2" placeholder="vakcode"></td>
-                            <td><input type="number" name="ects2" min="1" max="60" placeholder="ECTS"></td>
-                            <td><input type="date" name="date2"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="vakcode3" placeholder="vakcode"></td>
-                            <td><input type="number" name="ects3" min="1" max="60" placeholder="ECTS"></td>
-                            <td><input type="date" name="date3"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="vakcode4" placeholder="vakcode"></td>
-                            <td><input type="number" name="ects4" min="1" max="60" placeholder="ECTS"></td>
-                            <td><input type="date" name="date4"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="vakcode5" placeholder="vakcode"></td>
-                            <td><input type="number" name="ects5" min="1" max="60" placeholder="ECTS"></td>
-                            <td><input type="date" name="date5"></td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Vakcode</th>
+                                <th>ECTS</th>
+                                <th>Datum behaald</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" name="vakcode1" placeholder="vakcode"></td>
+                                <td><input type="number" name="ects1" min="0" max="60" placeholder="ECTS" required></td>
+                                <td><input type="date" name="date1" required></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="vakcode2" placeholder="vakcode"></td>
+                                <td><input type="number" name="ects2" min="0" max="60" placeholder="ECTS" required></td>
+                                <td><input type="date" name="date2"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="vakcode3" placeholder="vakcode"></td>
+                                <td><input type="number" name="ects3" min="0" max="60" placeholder="ECTS" required></td>
+                                <td><input type="date" name="date3"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="vakcode4" placeholder="vakcode"></td>
+                                <td><input type="number" name="ects4" min="0" max="60" placeholder="ECTS" required></td>
+                                <td><input type="date" name="date4"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="vakcode5" placeholder="vakcode"></td>
+                                <td><input type="number" name="ects5" min="0" max="60" placeholder="ECTS" required></td>
+                                <td><input type="date" name="date5"></td>
+                            </tr>
+                        </tbody>
                     </table>
                 </form>
-                <button>Bereken studietempo</button>
+                <button type="submit" form="expectedP" value="Submit">Bereken studietempo</button>
             </div>
         </div>
         <hr>
@@ -89,5 +93,7 @@
                 <span id="dateSpan">Datum: 13-2-2019</span>
             </p>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
